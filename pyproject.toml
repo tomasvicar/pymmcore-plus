@@ -37,8 +37,8 @@ dynamic = ["version"]
 dependencies = [
     "platformdirs >=3.0.0",
     "numpy >=1.17.3",
-    "psygnal >=0.7",
-    "pymmcore >=10.7.0.71.0",
+    "psygnal>=0.7",
+    "pymmcore @ {root:uri}/../pymmcore",
     "typing-extensions",      # not actually required at runtime
     "useq-schema >=0.4.7",
     "wrapt >=1.14",
@@ -88,6 +88,9 @@ source = "vcs"
 
 [tool.hatch.metadata]
 allow-direct-references = true
+
+
+
 
 # https://hatch.pypa.io/latest/config/build/#file-selection
 [tool.hatch.build.targets.sdist]
